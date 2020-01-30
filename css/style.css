@@ -7,12 +7,12 @@
 :root
 {
     /* Font Size Start */
-    --small-text-size: calc(var(--text-size) * 0.9);
+    --small-text-size: calc(var(--text-size) * 0.8);
     --text-size: 2.2vmin;
     --big-text-size: calc(var(--text-size) * 1.1);
-    --small-title-size: calc(var(--title-size) * 0.6);
+    --small-title-size: calc(var(--title-size) * 0.75);
     --title-size: 4vmin;
-    --big-title-size: calc(var(--title-size) * 1.4); 
+    --big-title-size: calc(var(--title-size) * 1.5); 
     /* Font Size End */
 
     /* Font Family Start */
@@ -27,6 +27,8 @@
     --color-accent: hsl(229, 31%, 21%);
     --color-contrast: #fff;
     /* Colors End */
+
+    --box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.15);
 }
 
 *
@@ -47,7 +49,8 @@
 
 body
 {
-	font-size: var(--text-size);
+    font-size: var(--text-size);
+    line-height: 1.5;
 	color: var(--color-accent);
 	list-style: none;
 	font-family: var(--text-family);
@@ -81,4 +84,117 @@ body
         --small-title-size: calc(var(--title-size) * 0.9);
         --big-title-size: calc(var(--title-size) * 1.2); 
     }
+}
+
+
+/* General CSS Start */
+h1{
+    font-size: var(--big-title-size);
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: var(--title-size);
+    font-weight: 600;
+    color: var(--color-accent);
+}
+h3{
+    font-size: var(--small-title-size);
+    font-weight: 600;
+    color: var(--color-accent);
+}
+.small-text{
+    font-size: var(--small-text-size);
+}
+.btn-red{
+    background-color: var(--color-tertiary);
+    padding: .5rem 2rem;
+    color: var(--color-contrast);
+    text-transform: uppercase;
+    font-size: var(--small-text-size);
+    border-radius: 4px;
+    font-weight: 600;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.btn-blue{
+    background-color: var(--color-primary);
+    padding: .8rem 1.5rem;
+    color: var(--color-contrast);
+    font-size: var(--small-text-size);
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.btn-grey{
+    background-color: #f7f7f7;
+    padding: .8rem 1.5rem;
+    color: var(--color-accent);
+    font-size: var(--small-text-size);
+    font-weight: 600;
+    margin-left: 1rem;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.container-wide{
+    width: 85%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.mb-4{
+    margin-bottom: 2rem;
+}
+
+/* General CSS End */
+
+
+/* Navbar CSS Start */
+nav{
+    height: 10vh;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: var(--small-text-size);
+    font-weight: 600;
+}
+.nav-link-container{
+    width: 40%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar CSS End */
+
+
+/* Header CSS Start */
+header{
+    padding: 4rem 0;
+}
+.header-info{
+    width: 40%;
+}
+.header-img-container{
+    height: auto;
+    width: 55%;
+    margin-left: auto;
+    position: relative;
+    background-color: tomato;
+}
+.header-img{
+    width: 100%;
+    position: absolute;
+    left: -20%;
+}
+
+.hidden{
+    display:none;
 }
