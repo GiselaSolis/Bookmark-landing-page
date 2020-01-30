@@ -191,8 +191,8 @@ header{
 }
 .header-img{
     width: 100%;
-    position: absolute;
-    left: -20%;
+    position: relative;
+    left: 10%;
 }
 
 .hidden{
