@@ -51,7 +51,7 @@ body
 {
     font-size: var(--text-size);
     line-height: 1.5;
-	color: var(--color-accent);
+	color: var(--color-secondary);
 	list-style: none;
 	font-family: var(--text-family);
 	font-weight: 400;
