@@ -1,0 +1,84 @@
+/* Dependances */
+@import url('<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> ');
+
+
+
+/* Main CSS Start */
+:root
+{
+    /* Font Size Start */
+    --small-text-size: calc(var(--text-size) * 0.9);
+    --text-size: 2.2vmin;
+    --big-text-size: calc(var(--text-size) * 1.1);
+    --small-title-size: calc(var(--title-size) * 0.6);
+    --title-size: 4vmin;
+    --big-title-size: calc(var(--title-size) * 1.4); 
+    /* Font Size End */
+
+    /* Font Family Start */
+    --text-family: 'Rubik', sans-serif;
+    --title-family: 'Rubik', sans-serif;
+    /* Font Family End */
+
+    /* Colors Start */
+    --color-primary: hsl(231, 69%, 60%);
+    --color-secondary: hsl(229, 8%, 60%);
+    --color-tertiary: hsl(0, 94%, 66%);
+    --color-accent: hsl(229, 31%, 21%);
+    --color-contrast: #fff;
+    /* Colors End */
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: inherit;
+	text-transform: inherit;
+	color: inherit;
+	list-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+body
+{
+	font-size: var(--text-size);
+	color: var(--color-accent);
+	list-style: none;
+	font-family: var(--text-family);
+	font-weight: 400;
+	text-decoration: none;
+    text-transform: none;
+}
+
+::-webkit-scrollbar 
+{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: var(--color-secondary);
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait)
+{
+    :root
+    {
+        --text-size: 14px;
+        --title-size: 19px;
+        --small-title-size: calc(var(--title-size) * 0.9);
+        --big-title-size: calc(var(--title-size) * 1.2); 
+    }
+}
