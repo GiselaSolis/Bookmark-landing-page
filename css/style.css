@@ -120,6 +120,15 @@ h3{
     font-weight: 600;
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn-red:hover{
+    border: 2px solid var(--color-tertiary);
+    background-color: var(--color-contrast);
+    color: var(--color-tertiary);
+}
+button:active{
+  transform: scale(0.95);  
 }
 .btn-blue{
     background-color: var(--color-primary);
@@ -130,6 +139,12 @@ h3{
     border-radius: 4px;
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    border: 2px solid transparent
+}
+.btn-blue:hover{
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-contrast);
+    color: var(--color-primary);
 }
 .btn-grey{
     background-color: #f7f7f7;
@@ -141,6 +156,23 @@ h3{
     border-radius: 4px;
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    border: 2px solid transparent
+}
+.btn-grey:hover{
+    border: 2px solid rgb(75, 75, 75);
+    background-color: var(--color-contrast); 
+    
+}
+.btn-contact{
+    background-color: var(--color-primary);
+    padding: .8rem 1.5rem;
+    color: var(--color-contrast);
+    font-size: var(--small-text-size);
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border: 2px solid transparent
 }
 .container-wide{
     width: 85%;
@@ -195,6 +227,9 @@ nav{
     text-transform: uppercase;
     font-size: var(--small-text-size);
     font-weight: 600;
+}
+.nav-link:hover{
+    color: var(--color-tertiary);
 }
 .nav-link-container{
     width: 40%;
@@ -322,12 +357,18 @@ header{
 .tab{
     height: 50px;
     width: 33.333333%;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+}
+#tab1{
+    color: var(--color-accent);
+}
+.tab-link:hover{
+    color: var(--color-tertiary);
 }
 .red-line{
     height: 3px;
@@ -336,6 +377,7 @@ header{
     align-self: flex-end;
 }
 .features-content{
+    height: 60vmin;
     display: flex;
     align-items: center;
 }
@@ -375,19 +417,22 @@ header{
 }
 .browsers{
     width: 60%;
+    height: auto;
     margin: 0 auto;
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: turquoise;
 }
 .card-align{
-    position: relative;
-    top: 20%;
+    transform: translateY(10%);
+}
+.card-align2{
+    transform: translateY(20%)
 }
 .browser-card{
     width: 30%;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,15 +449,87 @@ header{
 }
 
         /* FAQ's */
+.faqs{
+    margin-bottom: 9rem;
+}
 .faqs-info{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.questions-container{
+    border-bottom: 1px solid lightgrey;
+    paddin
+}
+.questions{
+    color: var(--color-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 0;
+    cursor: pointer;
+}
+.questions:hover{
+    color: var(--color-tertiary);
+}
+#question-1{
+    border-top: 1px solid lightgrey; 
+}
+.answers{
+    padding: .8rem 0;
+    font-size: var(--small-text-size);
+}
+.faqs-btn-container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+        /* Contact */
+.contact{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 5rem 0;
     text-align: center;
     margin-bottom: 10rem;
 }
 
+.contact-eyebrow{
+    font-size: var(--small-text-size);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+.contact-title{
+    color: var(--color-contrast);
+    margin-bottom: 2rem;
+}
+.contact-input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: springgreen;
+}
+.contact-input{
+    
+}
+.btn-contact{
+    background-color: var(--color-tertiary);
+    padding: .8rem 1.5rem;
+    color: var(--color-contrast);
+    font-size: var(--small-text-size);
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border: 2px solid transparent
+}
+
 @media only screen and (max-width: 992px){
      .features-content{
+        height: auto;
         display: flex;
         flex-wrap: wrap;
+
     }
     .features-img-container{
         width: 70%;

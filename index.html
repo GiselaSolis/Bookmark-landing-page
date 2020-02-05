@@ -13,10 +13,10 @@
 
   <nav class="container-wide row">
     <a href="#"><img src="./images/logo-bookmark.svg" alt=""></a>
-    <div class="nav-link-container nav-link">
-      <a href="http://#">Features</a>
-      <a href="http://#">Pricing</a>
-      <a href="http://#">Contact</a>
+    <div class="nav-link-container">
+      <a class="nav-link" href="http://#">Features</a>
+      <a class="nav-link" href="http://#">Pricing</a>
+      <a class="nav-link" href="http://#">Contact</a>
       <button class="btn-red">Login</button>      
     </div>
     <img class="nav-menu" src="./images/icon-hamburger.svg" alt="">
@@ -52,15 +52,15 @@
   
   <div class="features-tabs">
     <div class="tab">
-      <p>Simple Bookmarking</p> 
+      <p class="tab-link" id="tab1">Simple Bookmarking</p> 
       <div class="red-line" style="opacity:100"></div>
     </div>
     <div class="tab">
-      <p>Speedy Searching</p> 
+      <p class="tab-link" id="tab2">Speedy Searching</p> 
       <div class="red-line" style="opacity:0"></div>
     </div>
     <div class="tab">
-      <p>Easy Sharing</p> 
+      <p class="tab-link" id="tab3">Easy Sharing</p> 
       <div class="red-line" style="opacity:0"></div>
     </div>
   </div>
@@ -133,7 +133,7 @@
         <button class="btn-blue">Add & Install Extension</button>
       </div>
 
-      <div class="browser-card card-align">
+      <div class="browser-card card-align2">
         <img class="browser-logo" src="./images/logo-opera.svg" alt="">
         <h3>Add to Opera</h3>
         <p class="small-text mb-4">Minimum version 46</p>
@@ -143,7 +143,7 @@
     </div>
   </div>
 
-   <!-- FAQ's -->
+    <!-- FAQ's -->
     <div class="faqs">
       <div class="container-slim faqs-info">
         <h2>Frequently Asked Questions</h2>
@@ -151,52 +151,86 @@
         answered please feel free to email us.</p>
       </div>
 
+      <div class="container-slim">
+          <!-- Question 1 -->
+        <div class="questions-container">
+          <div class="questions" id="question-1">
+            <p>What is Bookmark?</p>
+            <img src="./images/icon-arrow.svg" alt="">            
+          </div>
+          <div class="answers" id="answer-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="questions-container">
+          <div class="questions" id="question-2">
+            <p>How can I request a new browser?</p>
+            <img src="./images/icon-arrow.svg" alt="">            
+          </div>
+          <div class="answers" id="answer-2">
+            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="questions-container">
+          <div class="questions" id="question-3">
+            <p>Is there a mobile app?</p>
+            <img src="./images/icon-arrow.svg" alt="">            
+          </div>
+          <div class="answers" id="answer-3">
+            <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="questions-container">
+          <div class="questions" id="question-4">
+            <p> What about other Chromium browsers?</p>
+            <img src="./images/icon-arrow.svg" alt="">            
+          </div>
+          <div class="answers" id="answer-4">
+            <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+        <div class="faqs-btn-container">
+          <button class="btn-blue">More Info</button> 
+        </div>
+      </div>
     </div>
 
+  <div class="contact">
+    <div class="container-slim contact-container">
+      <p class="contact-eyebrow">35,000+ already joined</p>
+      <h2 class="contact-title">Stay up-to-date with what we’re doing</h2>
+      <div class="contact-input-container">
+        <form action="contact">
+          <input type="email" placeholder="Enter your email adress" class="contact-input">
+        </form>
+        <button class="btn-contact">Contact us</button>
+      </div>
+    </div>
+    
+  </div>
 
 
   
   <div class="hidden">
+
   
+
   
+
   
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
 
   Contact Us
 
