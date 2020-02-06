@@ -490,7 +490,6 @@ header{
     color: white;
     padding: 5rem 0;
     text-align: center;
-    margin-bottom: 10rem;
 }
 
 .contact-eyebrow{
@@ -503,14 +502,17 @@ header{
     color: var(--color-contrast);
     margin-bottom: 2rem;
 }
-.contact-input-container{
+.contact-form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: springgreen;
 }
 .contact-input{
-    
+    margin-right: 1rem;
+    flex:1;
+    border-radius: 4px;
+    color: var(--color-secondary);
+    padding: 0 1rem;
 }
 .btn-contact{
     background-color: var(--color-tertiary);
@@ -519,9 +521,57 @@ header{
     font-size: var(--small-text-size);
     font-weight: 600;
     border-radius: 4px;
-    box-shadow: var(--box-shadow);
     cursor: pointer;
     border: 2px solid transparent
+}
+.btn-contact:hover{
+    border-color: var(--color-tertiary);
+    background-color: var(--color-contrast);
+    color: var(--color-tertiary);
+}
+
+    /* Footer */
+footer{
+    background-color: var(--color-accent);
+    color: white;
+    padding: 2rem 0;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-link-container{
+    display: flex;
+    flex-direction: row;
+}
+.footer-logo{
+    margin-right: 2rem;
+}
+.footer-link{
+    padding: 0 1rem;
+    font-size: var(--small-text-size);
+    text-transform: uppercase;
+}
+.footer-link:hover{
+    color: var(--color-tertiary);
+}
+.social-icons{
+    margin-left: auto;
+}
+svg:hover{
+    fill: var(--color-tertiary);
+}
+.icon{
+    margin: 0 .8rem;
+    scale: .8;
+}
+.attribution{
+    background-color: var(--color-tertiary);
+    color: var(--color-contrast);
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 992px){
@@ -566,6 +616,14 @@ header{
     .btn-sm-hidden{
         display: none;
     }
+    .browsers{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .browser-card{
+        width: 260px;
+    }
 }
 
 @media only screen and (max-width: 375px), (orientation: portrait){
@@ -587,7 +645,43 @@ header{
     .tab{
         padding-top: .8rem;
     }
+    .browser-card{
+        
+    }
+    .contact-form{
+        display: block;
+    }
+    .contact-input{
+        width: 100%;
+        padding: .8rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .btn-contact{
+        width: 100%;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-bottom: 1.5rem;
+    }
+    .footer-link-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-link{
+        margin-bottom: 1.5rem;
+    }
+    .social-icons{
+        margin-left: 0;
+        mar
+    }
 }
+
+
 
 
 
