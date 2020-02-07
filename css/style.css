@@ -559,12 +559,16 @@ footer{
 .social-icons{
     margin-left: auto;
 }
-svg:hover{
+svg:hover path{
     fill: var(--color-tertiary);
 }
-.icon{
+svg{
     margin: 0 .8rem;
     scale: .8;
+    cursor: pointer;
+}
+svg:active {
+    transform: scale(0.95);
 }
 .attribution{
     background-color: var(--color-tertiary);
