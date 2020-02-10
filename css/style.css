@@ -367,8 +367,17 @@ header{
     border-bottom: 1px solid lightgrey;
     cursor: pointer;
 }
-#tab1{
+.tab-hidden{    
+    display: none;
+}
+.tab-active{
     color: var(--color-accent);
+}
+.tab-active .red-line{
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-tertiary);
+    align-self: flex-end;
 }
 .tab-link:hover{
     color: var(--color-tertiary);
@@ -376,13 +385,13 @@ header{
 .red-line{
     height: 3px;
     width: 100%;
-    background-color: var(--color-tertiary);
+    background-color: transparent;
     align-self: flex-end;
 }
-.features-content{
-    height: 60vmin;
+.content-active{
     display: flex;
     align-items: center;
+    height: 60vmin;
 }
 .features-img-container{
     position: relative;
@@ -461,7 +470,6 @@ header{
 }
 .questions-container{
     border-bottom: 1px solid lightgrey;
-    paddin
 }
 .questions{
     color: var(--color-accent);
@@ -471,6 +479,7 @@ header{
     padding: .8rem 0;
     cursor: pointer;
 }
+
 .questions:hover{
     color: var(--color-tertiary);
 }
@@ -652,9 +661,6 @@ svg:active {
     .tab{
         padding-top: .8rem;
     }
-    .browser-card{
-        
-    }
     .contact-form{
         display: block;
     }
@@ -684,7 +690,6 @@ svg:active {
     }
     .social-icons{
         margin-left: 0;
-        mar
     }
 }
 
@@ -694,12 +699,13 @@ svg:active {
 }
 .mobile-menu.active
 {
-    display: flex;
+    top: 0;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 375px), (orientation: portrait){
     .mobile-menu{
-        display: none;
+        display: flex;
         flex-direction: column;
         background-color:rgba(37,43,70,0.95);
         padding: 1.8rem 2rem;
@@ -707,6 +713,9 @@ svg:active {
         z-index: 999;
         height: 100vh;
         width: 100vw;
+        top: -105vh;
+        opacity: 0.4;
+        transition: top 0.3s ease, opacity 0.3s ease;
     }
     .logo-row{
         display: flex;

@@ -12,32 +12,103 @@ var menuOpen = document.getElementById("hamburger");
 var menu = document.getElementById("mobilemenu")
 var menuClose = document.getElementById("hamburger-close");
 
-function openMenu(){
-    console.log("clicking")
-    menu.classList.add("active")
+function menuAction()
+{
+    console.log("menuAction");
+    menu.classList.toggle("active");
 }
-//     if (menu.style.display === "none") {
-//         menu.style.display = "flex";
-//     } 
-//     else {
-//     menu.style.display = "none";
+
+menuOpen.addEventListener("click", menuAction);
+menuClose.addEventListener ("click", menuAction);
+
+// function classToggler(element, className)
+// {
+//     element.classList.toggle(className);
+// }
+
+// Element.prototype.classToggler = function (className)
+// {
+//     this.classList.toggle(className);
+// };
+
+// NodeList.prototype.classToggler = HTMLCollection.prototype.classToggler = function (className)
+// {
+//     for (i = 0; i < this.length -1; i ++)
+//     {
+//         if (this[i])
+//         {
+//             this[i].classToggler(className);
+//         }
 //     }
-// 
+// }
 
-function closeMenu(){
-    menu.classList.remove("active")
-    // if (menu.style.display === "flex") {
-    //     menu.style.display = "none"
-    // }
-}
+// let elemento = document.querySelector("body");
 
-menuOpen.addEventListener("click", openMenu)
-menuClose.addEventListener ("click", closeMenu)
+// classToggler(elemento, "active");
+
+// document.querySelector("body").classToggler("active");
+// document.querySelectorAll("ul").classToggler("active");
+
+// function openMenu(){
+//     console.log("clicking")
+//     menu.classList.add("active")
+// }
+// //     if (menu.style.display === "none") {
+// //         menu.style.display = "flex";
+// //     } 
+// //     else {
+// //     menu.style.display = "none";
+// //     }
+// // 
+
+// function closeMenu(){
+//     menu.classList.remove("active")
+//     // if (menu.style.display === "flex") {
+//     //     menu.style.display = "none"
+//     // }
+// }
+
+
 
 
 // Features tabs
-var tabbtn = document.getElementsByClassName("tab")
 
+// var tabbtn = document.getElementsByClassName("tab")
+// var tab = document.getElementsByClassName("tab-content")
+
+// 0
+// 1
+// 2
+
+// contents
+// tab[i].onclick = function() { contents[i].display }
+
+// data-target = "tab1"
+
+// data-tab = "tab1"
+
+
+// let buttons = docuemt.querySelectorAll(".tab-button");
+
+// button.onclick = function()
+// {
+//     let current = document.querySelector("[data-tab = '" + this.dataset.target +  "']")
+// }
+
+
+// 0
+// 1
+// 2
+
+
+// function openTab(event, tabName){
+//     for (i = 0; i < tab.length; i ++){
+//         tab[i].classList.remove = "content-active"    
+//     }
+// }
+
+
+// tabbtn.addEventListener("click", openTab)
 
 
 // function openCity(evt, cityName) {
