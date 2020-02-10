@@ -241,6 +241,7 @@ nav{
 .nav-menu{
     display: none;
 }
+
 @media only screen and (max-width: 992px){
     .nav-link-container {
         width: 60%;
@@ -253,7 +254,9 @@ nav{
     .nav-menu{
         display: block;
         margin-left: auto;
+        cursor: pointer;
     }
+
 }
 
 /* Navbar CSS End */
@@ -687,12 +690,13 @@ svg:active {
 
  /* Mobile menu */
 .mobile-menu{
-    display:none
+    display: none;
 }
 
 @media only screen and (max-width: 375px), (orientation: portrait){
     .mobile-menu{
-        display: block;
+        display: none;
+        flex-direction: column;
         background-color:rgba(37,43,70,0.95);
         padding: 1.8rem 2rem;
         position: fixed;
@@ -723,8 +727,12 @@ svg:active {
         letter-spacing: 2px;
         border-bottom: 1px solid rgb(255, 255, 255, 0.20);
     }
+    .mobile-link:hover{
+        color: var(--color-tertiary);
+    }
     .top-line{
         border-top: 1px solid rgb(255, 255, 255, 0.20);
+        cursor: pointer;
     }
     .btn-mobile-menu{
         width: 100%;
@@ -737,6 +745,23 @@ svg:active {
         letter-spacing: 2px;
         padding: .8rem 0;
         border-radius: 4px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+    .btn-mobile-menu:hover{
+        border-color: var(--color-tertiary);
+        color: var(--color-tertiary);
+    }
+    .mobile-social{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: 2rem;
 
+    }
+    .mobile-icon{
+        scale: 1;
+        cursor: pointer;
     }
 }
