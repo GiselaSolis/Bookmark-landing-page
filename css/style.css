@@ -692,6 +692,10 @@ svg:active {
 .mobile-menu{
     display: none;
 }
+.mobile-menu.active
+{
+    display: flex;
+}
 
 @media only screen and (max-width: 375px), (orientation: portrait){
     .mobile-menu{
