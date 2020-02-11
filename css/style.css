@@ -355,7 +355,7 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 .tab{
     height: 50px;
@@ -366,19 +366,15 @@ header{
     flex-wrap: wrap;
     border-bottom: 1px solid lightgrey;
     cursor: pointer;
+    color: var(--color-secondary);
 }
 .tab-hidden{    
     display: none;
 }
-.tab-active{
+.tab.active{
     color: var(--color-accent);
 }
-.tab-active .red-line{
-    height: 3px;
-    width: 100%;
-    background-color: var(--color-tertiary);
-    align-self: flex-end;
-}
+
 .tab-link:hover{
     color: var(--color-tertiary);
 }
@@ -388,10 +384,16 @@ header{
     background-color: transparent;
     align-self: flex-end;
 }
-.content-active{
-    display: flex;
+.red-line.active{
+    background-color: var(--color-tertiary);
+}
+.tab-content{
+    display: none;
     align-items: center;
     height: 60vmin;
+}
+.tab-content.active{
+    display: flex;
 }
 .features-img-container{
     position: relative;
@@ -487,9 +489,15 @@ header{
     border-top: 1px solid lightgrey; 
 }
 .answers{
+    display: none;
+    overflow: hidden;
     padding: .8rem 0;
     font-size: var(--small-text-size);
 }
+.answers.active{
+    display: block;
+}
+
 .faqs-btn-container{
     margin-top: 3rem;
     display: flex;
